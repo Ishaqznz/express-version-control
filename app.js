@@ -3,7 +3,6 @@ const app = express()
 require('dotenv').config()
 const PORT = process.env.PORT
 
-
 app.listen(PORT, () => {
     console.log(`The Server is started at ${ PORT }`)
 })
