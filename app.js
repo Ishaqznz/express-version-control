@@ -1,7 +1,10 @@
 const express = require('express')
 const app = express()
 
-
-app.listen(3000, () => {
-    console.log("The sever is started at 3000")
+app.get('/', (req, res) => {
+    try {
+        res.send('heyyy')
+    } catch (error) {
+        res.status(500).send('Server error!')
+    }
 })
